@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix='>')
 async def on_ready():
     print('Olá mundo')
 
-@client.slash_command(name='teste', description='Comando-teste')
+@client.slash_command(name='teste', description='Comando-teste"')
 async def testes(inter):
     await inter.response.send_message(f'Comando funcionando {inter}')
 
